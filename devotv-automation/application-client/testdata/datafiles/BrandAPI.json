@@ -1,0 +1,171 @@
+{
+  "Id": "MakeItFree-API-TEST",
+  "name": "MakeItFree Brand Automation Tests",
+  "type": "FUNCTIONAL",
+  "testList": [
+    {
+      "test_name": "Validate User Retrieve all the brand data without ID",
+      "testRunEnabled": true,
+      "keywords": [
+        {
+          "name": "User Validate the Expected data",
+          "args": [
+            {
+            "id":"5cd62933-2faa-11ee-89ea-0a134ffd88d7",
+            "name":"JIO MART 2"
+            }
+          ]
+        },
+        {
+          "name": "GET all existing user for advertiser",
+          "args": [
+            "/v1/cms/brands?ps=2000&pn=1",
+            "200"
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "Validate User Creates the brand data",
+      "testRunEnabled": true,
+      "keywords": [
+        {
+          "name": "User Creates the Payload",
+          "args": [
+            {
+              "name": "Carhartt",
+              "tagline": "Never Stop Carhartt",
+              "popularity_score": "8",
+              "country_of_origin_code": "US",
+              "identity_logo_url": "www.Carhartt.com",
+              "parent_company_name": "Carhartt",
+              "related_tags": "#Carhartt",
+              "industry_classification_id": "1"
+            }
+          ]
+        },
+        {
+          "name": "User Add the new Brand data for advertiser",
+          "args": [
+            "/v1/cms/brand",
+            "201"
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "Validate User Retrieve the brand data by ID",
+      "testRunEnabled": true,
+      "keywords": [
+        {
+          "name": "GET existing users by ID for advertiser",
+          "args": [
+            "/v1/cms/brand/24ae57a8-a181-4711-b7d4-2881205b3f6c",
+            "200"
+          ]
+        },
+        {
+          "name": "User Compare the API response body with Expected data",
+          "args": [
+            {
+              "id": "24ae57a8-a181-4711-b7d4-2881205b3f6c",
+              "name": "relience MART",
+              "tagline": "string",
+              "popularity_score": "0",
+              "country_of_origin_code": "USA",
+              "identity_logo_url": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+              "parent_company_name": "NA",
+              "related_tags": "JIO",
+              "industry_classification": {
+                "id": 1,
+                "name": "industrial_classification_1"
+              },
+              "monthly_online_search_count": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "Upload all the brand data",
+      "testRunEnabled": false,
+      "keywords": [
+        {
+          "name": "User Creates the Payload from CSV and upload",
+          "args": [
+            {
+              "name": "",
+              "tagline": "Never Stop Carhartt",
+              "popularity_score": "8",
+              "country_of_origin_code": "US",
+              "identity_logo_url": "www.Carhartt.com",
+              "parent_company_name": "Carhartt",
+              "related_tags": "#Carhartt",
+              "industry_classification_id": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "Validate User Update the Existing brand data by ID",
+      "testRunEnabled": true,
+      "keywords": [
+        {
+          "name": "User Creates the Payload",
+          "args": [
+            {
+              "name": "amazon_web",
+              "tagline": "amazon_web",
+              "popularity_score": "8",
+              "country_of_origin_code": "USA",
+              "identity_logo_url": "www.amazon_web.com",
+              "parent_company_name": "amazon",
+              "related_tags": "#amazonweb",
+              "industry_classification_id": "1"
+            }
+          ]
+        },
+        {
+          "name": "User updates an Existing data for advertiser",
+          "args": [
+            "/v1/cms/brand/d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+            "200"
+          ]
+        },
+        {
+          "name":"User Compare the API response body with Expected data",
+          "args": [
+            {
+              "id":"d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+              "name": "amazon_web",
+              "tagline": "amazon_web",
+              "popularity_score": 8,
+              "country_of_origin_code": "USA",
+              "identity_logo_url": "www.amazon_web.com",
+              "parent_company_name": "amazon",
+              "related_tags": "#amazonweb",
+              "industry_classification": {
+                "id": 1,
+                "name": "industrial_classification_1"
+            }
+          }
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "Validate User Deletes the brand data by ID",
+      "testRunEnabled": true,
+      "keywords": [
+        {
+          "name": "User Deletes an Existing data for advertiser",
+          "args": [
+            "/v1/cms/brand/507a4aee-7170-4cb6-8c72-cd9bf484949b",
+            "200"
+          ]
+        }
+      ]
+    }
+  ]
+}

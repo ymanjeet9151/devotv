@@ -1,0 +1,254 @@
+{
+  "Id": "HomePage-TEST",
+  "name": "DevoTV Automation Tests",
+  "type": "FUNCTIONAL",
+  "testList": [
+    {
+      "test_name": "HomePage page load validation",
+      "testRunEnabled": true,
+      "testDescription": "Test HomePage navigation and capture the Page loadtime",
+      "parentType": "page",
+      "base_URL": "devotv",
+      "keywords": [
+        {
+          "name": "Capture The Home Page Load Time",
+          "args": [
+            "HomePage",
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "validate the HomePage ALL Genre showCards",
+      "testRunEnabled": true,
+      "testDescription": "Test HomePage All Shows",
+      "parentType": "page",
+      "base_URL": "devotv",
+      "keywords": [
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "User Click On Genre Button and Verify Show Cards",
+          "args": [
+            "All",
+            [
+              "Alien Autopsy",
+              "Beyond Geek",
+              "Egypt: New Discoveries, Ancient Mysteries",
+              "Firefly",
+              "Flatland",
+              "Ghost Chasers",
+              "Ghost Dimension",
+              "Ghost Dimension: Flying Solo",
+              "Ghost Dimension: Lockdown",
+              "Paranormal Portals",
+              "Share Your Scare",
+              "The Conspiracy Show",
+              "The New Tomorrow",
+              "The Past Hunters",
+              "The R.I.P. Files",
+              "The Tribe",
+              " Twist in the Tale"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "verify the Horror showCards from HomePage",
+      "testRunEnabled": true,
+      "testDescription": "Test Horror Shows",
+      "parentType": "page",
+      "base_URL": "devotv",
+      "keywords": [
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "Sleep",
+          "args": "10"
+        },
+        {
+          "name": "User Click On Genre Button and Verify Show Cards",
+          "args": [
+            "Horror",
+            [
+             "Ghost Chasers",
+             "Ghost Dimension",
+             "Ghost Dimension: Flying Solo",
+             "Ghost Dimension: Lockdown",
+             "Paranormal Portals",
+             "Share Your Scare",
+             "The Past Hunters",
+             "The R.I.P. Files"]
+          ]
+        }
+      ]
+    },
+    {
+      "test_name": "verify the scifi showCards from HomePage",
+      "testRunEnabled": true,
+      "testDescription": "Test scifi Shows",
+      "parentType": "page",
+      "base_URL": "devotv",
+      "keywords": [
+        {
+          "name": "Launch an Application",
+          "args": [
+            "page=HomePage"
+          ]
+        },
+        {
+          "name": "User Click On Genre Button and Verify Show Cards",
+          "args": [
+            "Sci-Fi",
+             [
+              "Alien Autopsy",
+              "Beyond Geek",
+              "Egypt: New Discoveries, Ancient Mysteries",
+              "Firefly",
+              "Flatland",
+              "The Conspiracy Show",
+              "The New Tomorrow",
+              "The Tribe"
+             ]
+          ]
+        }
+      ]
+    },
+    {
+    "test_name": "verify the fantasy showCards from HomePage",
+    "testRunEnabled": true,
+    "testDescription": "Test fantasy Shows",
+    "parentType": "page",
+    "base_URL": "devotv",
+    "keywords": [
+      {
+        "name": "Launch an Application",
+        "args": [
+          "page=HomePage"
+        ]
+      },
+      {
+        "name": "User Click On Genre Button and Verify Show Cards",
+        "args": [
+          "Fantasy",
+          [
+            " Twist in the Tale"
+          ]
+        ]
+      }
+    ]
+    },
+    {
+      "test_name": "Validate the showPage re-direction from homePage by clicking on show",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "User Clicks On Home Page Show And Validate Show Page",
+          "args": ["All","card"]
+        },
+        {
+          "name": "The Application should be on ShowPage",
+          "args": []
+        }
+      ]
+    },
+    {
+      "test_name": "Validate the showPage re-direction from homePage by URL",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "HomePage.Click any Video Card on Home Page",
+          "args": []
+        },
+        {
+          "name": "The Application should be on ShowPage",
+          "args": []
+        }
+      ]
+    },
+    {
+      "test_name": "Validate the signup flow from Homepage",
+      "testRunEnabled": false,
+      "keywords":[
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "User Click On Signin Link",
+          "args": []
+        },
+        {
+          "name": "User Signup With Details",
+          "args": ["snehil.mishra+13457@impressico.com","Noida@123","impressico","business"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "User Deletes The Login Account",
+          "args": []
+        }
+      ]
+    },
+    {
+      "test_name": "Validate Signup flow using facebook from Home Page",
+      "testRunEnabled": false,
+      "keywords":[
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "User Click On Signin Link",
+          "args": []
+        },
+        {
+          "name": "User Signup via Facebook Account",
+          "args": ["rajala.reddy@impressico.com","India@123", "should_pass", 20,"Stream Free TV - No Ads"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        }
+      ]
+    },
+    {
+      "test_name": "validate the offer email links",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Launch an Application",
+          "args": ["page=HomePage"]
+        },
+        {
+          "name": "user_click_on_signin_link",
+          "args": []
+        },
+        {
+          "name": "User Performs Action On Vads Popup",
+          "args": ["SignIn","kovidrajala@gmail.com","India@23392","impressico","business"]
+        },
+        {
+          "name": "Validate Offer Links Coins",
+          "args": ["stage-rivittv-aurora.devotv.com","legolas","L2l6FoDQ8CoNmE9S","stage","select offer_reroute_external_destination_to_internal_url ,offer_coin_rewards_internal_destination_url from ctv_cms_aads_user_item_selection_offers_for_email where external_user_id ='72129560-b0e9-4943-b18d-5b4080bc0878' and user_offer_click_status=false and user_offer_coin_rewards_click_status=false;"]
+        }
+      ]
+    }
+  ]
+}

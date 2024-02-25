@@ -1,0 +1,1273 @@
+[
+    {
+        "request": {
+            "method": "GET",
+            "url": "https://dev-adsetup.mifadnetwork.com/v1/cms/brands",
+            "scheme": "https",
+            "netloc": "dev-adsetup.mifadnetwork.com",
+            "path": "/v1/cms/brands",
+            "query": {
+                "ps": "20",
+                "pn": "1"
+            },
+            "body": null,
+            "data": null,
+            "auth": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.3.0"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2023-09-14T10:02:51.156277+00:00",
+                "local": "2023-09-14T15:32:51.156277+05:30"
+            }
+        },
+        "response": {
+            "seconds": 0.883809,
+            "status": 200,
+            "reason": "",
+            "body": [
+                {
+                    "id": "24ae57a8-a181-4711-b7d4-2881205b3f6c",
+                    "name": "relience MART",
+                    "tagline": "string",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "USA",
+                    "identity_logo_url": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+                    "parent_company_name": "NA",
+                    "related_tags": "JIO",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62933-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "JIO MART 2",
+                    "tagline": "life is all set",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "USA",
+                    "identity_logo_url": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+                    "parent_company_name": "NA",
+                    "related_tags": "JIO",
+                    "industry_classification": {
+                        "id": 2,
+                        "name": "industrial_classification_2"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62c8d-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Hair Fall",
+                    "tagline": "",
+                    "popularity_score": 100,
+                    "country_of_origin_code": "IN",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Hims, Inc.",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62d2f-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Olay",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Procter & Gamble (P&G)",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62dbd-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "chewy",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Chewy, Inc.",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62e42-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Hair Loss",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Hims, Inc.",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62ec5-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "ED",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Hims, Inc.",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62f42-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Gillette",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Procter & Gamble (P&G)",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd62fb4-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Samsung",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Samsung Electronics Co., Ltd.",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "5cd63025-2faa-11ee-89ea-0a134ffd88d7",
+                    "name": "Crest",
+                    "tagline": "",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "",
+                    "parent_company_name": "Procter & Gamble (P&G)",
+                    "related_tags": null,
+                    "industry_classification": null,
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "d84a6a46-7e48-4d11-ad1d-cd0d400a6995",
+                    "name": "manjeet",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "USA",
+                    "identity_logo_url": "www.brand.com",
+                    "parent_company_name": "brand",
+                    "related_tags": "manj",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+                    "name": "amazon_web",
+                    "tagline": "amazon_web",
+                    "popularity_score": 8,
+                    "country_of_origin_code": "USA",
+                    "identity_logo_url": "www.amazon_web.com",
+                    "parent_company_name": "amazon",
+                    "related_tags": "#amazonweb",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "507a4aee-7170-4cb6-8c72-cd9bf484949b",
+                    "name": "manjeet500",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.manj3.com",
+                    "parent_company_name": "manj3",
+                    "related_tags": "manj3",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "8f007fd2-067b-40a4-adb3-d3ecfc1ba78d",
+                    "name": "manjeet9",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "USA",
+                    "identity_logo_url": "www.brand.com",
+                    "parent_company_name": "brand",
+                    "related_tags": "manj",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "9ebbd4c1-aded-4b43-bca8-fef4409bbffc",
+                    "name": "pri",
+                    "tagline": "pri",
+                    "popularity_score": 0,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.prince.com",
+                    "parent_company_name": "pri",
+                    "related_tags": "string",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "35f490ea-60f8-4e3a-b28d-5ad41510423c",
+                    "name": "manjeetit",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.brand99.com",
+                    "parent_company_name": "brand99",
+                    "related_tags": "manj99",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "0fe6eafa-ce24-4fee-b736-5f49f02571c1",
+                    "name": "manjeet1",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.brand1.com",
+                    "parent_company_name": "brand1",
+                    "related_tags": "manj1",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "94398549-3b6c-46d3-8d8a-c42d9f260b50",
+                    "name": "manjeet2",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.brand2.com",
+                    "parent_company_name": "brand2",
+                    "related_tags": "manj2",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "51b985e9-cec7-4372-9ef5-f4793fc8d37c",
+                    "name": "manjeet3",
+                    "tagline": "jingalala",
+                    "popularity_score": 5,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.manj3.com",
+                    "parent_company_name": "manj3",
+                    "related_tags": "manj3",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                },
+                {
+                    "id": "c05bd67d-7b0e-474c-8f28-d0a9a4ae9983",
+                    "name": "manjeet5",
+                    "tagline": "jingalala",
+                    "popularity_score": 6,
+                    "country_of_origin_code": "US",
+                    "identity_logo_url": "www.manj5.com",
+                    "parent_company_name": "manj5",
+                    "related_tags": "manj5",
+                    "industry_classification": {
+                        "id": 1,
+                        "name": "industrial_classification_1"
+                    },
+                    "monthly_online_search_count": null
+                }
+            ],
+            "headers": {
+                "Date": "Thu, 14 Sep 2023 10:02:50 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "0",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+                "X-Frame-Options": "DENY"
+            }
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "GET https://dev-adsetup.mifadnetwork.com/v1/cms/brands",
+            "description": "MakeItFree Brand Automation Tests: Validate User Retrieve all the brand data without ID",
+            "default": true,
+            "examples": [],
+            "type": "object",
+            "properties": {
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "null"
+                        },
+                        "query": {
+                            "type": "object",
+                            "properties": {
+                                "ps": {
+                                    "type": "string"
+                                },
+                                "pn": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "pn",
+                                "ps"
+                            ]
+                        }
+                    }
+                },
+                "response": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "tagline": {
+                                            "type": "string"
+                                        },
+                                        "popularity_score": {
+                                            "type": "integer"
+                                        },
+                                        "country_of_origin_code": {
+                                            "type": "string"
+                                        },
+                                        "identity_logo_url": {
+                                            "type": "string"
+                                        },
+                                        "parent_company_name": {
+                                            "type": "string"
+                                        },
+                                        "related_tags": {
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ]
+                                        },
+                                        "industry_classification": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "id",
+                                                        "name"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "monthly_online_search_count": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "country_of_origin_code",
+                                        "id",
+                                        "identity_logo_url",
+                                        "industry_classification",
+                                        "monthly_online_search_count",
+                                        "name",
+                                        "parent_company_name",
+                                        "popularity_score",
+                                        "related_tags",
+                                        "tagline"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string",
+                                            "enum": [
+                                                "5cd62933-2faa-11ee-89ea-0a134ffd88d7"
+                                            ]
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "tagline": {
+                                            "type": "string"
+                                        },
+                                        "popularity_score": {
+                                            "type": "integer"
+                                        },
+                                        "country_of_origin_code": {
+                                            "type": "string"
+                                        },
+                                        "identity_logo_url": {
+                                            "type": "string"
+                                        },
+                                        "parent_company_name": {
+                                            "type": "string"
+                                        },
+                                        "related_tags": {
+                                            "type": "string"
+                                        },
+                                        "industry_classification": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "name"
+                                            ]
+                                        },
+                                        "monthly_online_search_count": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "country_of_origin_code",
+                                        "id",
+                                        "identity_logo_url",
+                                        "industry_classification",
+                                        "monthly_online_search_count",
+                                        "name",
+                                        "parent_company_name",
+                                        "popularity_score",
+                                        "related_tags",
+                                        "tagline"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "enum": [
+                                                "JIO MART 2"
+                                            ]
+                                        },
+                                        "tagline": {
+                                            "type": "string"
+                                        },
+                                        "popularity_score": {
+                                            "type": "integer"
+                                        },
+                                        "country_of_origin_code": {
+                                            "type": "string"
+                                        },
+                                        "identity_logo_url": {
+                                            "type": "string"
+                                        },
+                                        "parent_company_name": {
+                                            "type": "string"
+                                        },
+                                        "related_tags": {
+                                            "type": "string"
+                                        },
+                                        "industry_classification": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "name"
+                                            ]
+                                        },
+                                        "monthly_online_search_count": {
+                                            "type": "null"
+                                        }
+                                    },
+                                    "required": [
+                                        "country_of_origin_code",
+                                        "id",
+                                        "identity_logo_url",
+                                        "industry_classification",
+                                        "monthly_online_search_count",
+                                        "name",
+                                        "parent_company_name",
+                                        "popularity_score",
+                                        "related_tags",
+                                        "tagline"
+                                    ]
+                                }
+                            ]
+                        },
+                        "status": {
+                            "type": "integer",
+                            "enum": [
+                                200
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "POST",
+            "url": "https://dev-adsetup.mifadnetwork.com/v1/cms/brand",
+            "scheme": "https",
+            "netloc": "dev-adsetup.mifadnetwork.com",
+            "path": "/v1/cms/brand",
+            "query": {},
+            "body": {
+                "name": "Carhartt",
+                "tagline": "Never Stop Carhartt",
+                "popularity_score": "8",
+                "country_of_origin_code": "US",
+                "identity_logo_url": "www.Carhartt.com",
+                "parent_company_name": "Carhartt",
+                "related_tags": "#Carhartt",
+                "industry_classification_id": "1"
+            },
+            "data": null,
+            "auth": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.3.0"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2023-09-14T10:02:53.128880+00:00",
+                "local": "2023-09-14T15:32:53.128880+05:30"
+            }
+        },
+        "response": {
+            "seconds": 0.802453,
+            "status": 500,
+            "reason": "",
+            "body": {
+                "timestamp": 1694685772828,
+                "status": 500,
+                "error": "Internal Server Error",
+                "path": "/v1/cms/brand"
+            },
+            "headers": {
+                "Date": "Thu, 14 Sep 2023 10:02:52 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+            }
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "POST https://dev-adsetup.mifadnetwork.com/v1/cms/brand",
+            "description": "MakeItFree Brand Automation Tests: Validate User Creates the brand data",
+            "default": true,
+            "examples": [],
+            "type": "object",
+            "properties": {
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "tagline": {
+                                    "type": "string"
+                                },
+                                "popularity_score": {
+                                    "type": "string"
+                                },
+                                "country_of_origin_code": {
+                                    "type": "string"
+                                },
+                                "identity_logo_url": {
+                                    "type": "string"
+                                },
+                                "parent_company_name": {
+                                    "type": "string"
+                                },
+                                "related_tags": {
+                                    "type": "string"
+                                },
+                                "industry_classification_id": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "country_of_origin_code",
+                                "identity_logo_url",
+                                "industry_classification_id",
+                                "name",
+                                "parent_company_name",
+                                "popularity_score",
+                                "related_tags",
+                                "tagline"
+                            ]
+                        },
+                        "query": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "response": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "timestamp": {
+                                    "type": "integer",
+                                    "default": 1694685772828
+                                },
+                                "status": {
+                                    "type": "integer",
+                                    "default": 500
+                                },
+                                "error": {
+                                    "type": "string",
+                                    "default": "Internal Server Error"
+                                },
+                                "path": {
+                                    "type": "string",
+                                    "default": "/v1/cms/brand"
+                                }
+                            },
+                            "required": [
+                                "error",
+                                "path",
+                                "status",
+                                "timestamp"
+                            ]
+                        },
+                        "status": {
+                            "type": "integer",
+                            "enum": [
+                                201
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "https://dev-adsetup.mifadnetwork.com/v1/cms/brand/24ae57a8-a181-4711-b7d4-2881205b3f6c",
+            "scheme": "https",
+            "netloc": "dev-adsetup.mifadnetwork.com",
+            "path": "/v1/cms/brand/24ae57a8-a181-4711-b7d4-2881205b3f6c",
+            "query": {},
+            "body": null,
+            "data": null,
+            "auth": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.3.0"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2023-09-14T10:02:54.822637+00:00",
+                "local": "2023-09-14T15:32:54.822637+05:30"
+            }
+        },
+        "response": {
+            "seconds": 0.628152,
+            "status": 200,
+            "reason": "",
+            "body": {
+                "id": "24ae57a8-a181-4711-b7d4-2881205b3f6c",
+                "name": "relience MART",
+                "tagline": "string",
+                "popularity_score": 0,
+                "country_of_origin_code": "USA",
+                "identity_logo_url": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+                "parent_company_name": "NA",
+                "related_tags": "JIO",
+                "industry_classification": {
+                    "id": 1,
+                    "name": "industrial_classification_1"
+                },
+                "monthly_online_search_count": null
+            },
+            "headers": {
+                "Date": "Thu, 14 Sep 2023 10:02:54 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "0",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+                "X-Frame-Options": "DENY"
+            }
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "GET https://dev-adsetup.mifadnetwork.com/v1/cms/brand/24ae57a8-a181-4711-b7d4-2881205b3f6c",
+            "description": "MakeItFree Brand Automation Tests: Validate User Retrieve the brand data by ID",
+            "default": true,
+            "examples": [],
+            "type": "object",
+            "properties": {
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "null"
+                        },
+                        "query": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "response": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "default": "24ae57a8-a181-4711-b7d4-2881205b3f6c",
+                                    "enum": [
+                                        "",
+                                        "24ae57a8-a181-4711-b7d4-2881205b3f6c"
+                                    ]
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "default": "relience MART",
+                                    "enum": [
+                                        "relience MART"
+                                    ]
+                                },
+                                "tagline": {
+                                    "type": "string",
+                                    "default": "string",
+                                    "enum": [
+                                        "string"
+                                    ]
+                                },
+                                "popularity_score": {
+                                    "type": "integer",
+                                    "default": 0,
+                                    "enum": [
+                                        0
+                                    ]
+                                },
+                                "country_of_origin_code": {
+                                    "type": "string",
+                                    "default": "USA",
+                                    "enum": [
+                                        "USA"
+                                    ]
+                                },
+                                "identity_logo_url": {
+                                    "type": "string",
+                                    "default": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+                                    "enum": [
+                                        "https://dev-product-ads.mifadnetwork.com/ad1.png"
+                                    ]
+                                },
+                                "parent_company_name": {
+                                    "type": "string",
+                                    "default": "NA",
+                                    "enum": [
+                                        "NA"
+                                    ]
+                                },
+                                "related_tags": {
+                                    "type": "string",
+                                    "default": "JIO",
+                                    "enum": [
+                                        "JIO"
+                                    ]
+                                },
+                                "industry_classification": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "default": 1,
+                                            "enum": [
+                                                1
+                                            ]
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "default": "industrial_classification_1",
+                                            "enum": [
+                                                "industrial_classification_1"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "id",
+                                        "name"
+                                    ]
+                                },
+                                "monthly_online_search_count": {
+                                    "type": "null",
+                                    "default": null
+                                }
+                            },
+                            "required": [
+                                "country_of_origin_code",
+                                "id",
+                                "identity_logo_url",
+                                "industry_classification",
+                                "monthly_online_search_count",
+                                "name",
+                                "parent_company_name",
+                                "popularity_score",
+                                "related_tags",
+                                "tagline"
+                            ],
+                            "examples": [
+                                {
+                                    "id": "24ae57a8-a181-4711-b7d4-2881205b3f6c",
+                                    "name": "relience MART",
+                                    "tagline": "string",
+                                    "popularity_score": 0,
+                                    "country_of_origin_code": "USA",
+                                    "identity_logo_url": "https://dev-product-ads.mifadnetwork.com/ad1.png",
+                                    "parent_company_name": "NA",
+                                    "related_tags": "JIO",
+                                    "industry_classification": {
+                                        "id": 1,
+                                        "name": "industrial_classification_1"
+                                    },
+                                    "monthly_online_search_count": null
+                                }
+                            ]
+                        },
+                        "status": {
+                            "type": "integer",
+                            "enum": [
+                                200
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "PUT",
+            "url": "https://dev-adsetup.mifadnetwork.com/v1/cms/brand/d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+            "scheme": "https",
+            "netloc": "dev-adsetup.mifadnetwork.com",
+            "path": "/v1/cms/brand/d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+            "query": {},
+            "body": {
+                "name": "amazon_web",
+                "tagline": "amazon_web",
+                "popularity_score": "8",
+                "country_of_origin_code": "USA",
+                "identity_logo_url": "www.amazon_web.com",
+                "parent_company_name": "amazon",
+                "related_tags": "#amazonweb",
+                "industry_classification_id": "1"
+            },
+            "data": null,
+            "auth": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.3.0"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2023-09-14T10:02:56.301517+00:00",
+                "local": "2023-09-14T15:32:56.301517+05:30"
+            }
+        },
+        "response": {
+            "seconds": 0.43548899999999996,
+            "status": 200,
+            "reason": "",
+            "body": {
+                "id": "d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+                "name": "amazon_web",
+                "tagline": "amazon_web",
+                "popularity_score": 8,
+                "country_of_origin_code": "USA",
+                "identity_logo_url": "www.amazon_web.com",
+                "parent_company_name": "amazon",
+                "related_tags": "#amazonweb",
+                "industry_classification": {
+                    "id": 1,
+                    "name": "industrial_classification_1"
+                },
+                "monthly_online_search_count": null
+            },
+            "headers": {
+                "Date": "Thu, 14 Sep 2023 10:02:56 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "0",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+                "X-Frame-Options": "DENY"
+            }
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "PUT https://dev-adsetup.mifadnetwork.com/v1/cms/brand/d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+            "description": "MakeItFree Brand Automation Tests: Validate User Update the Existing brand data by ID",
+            "default": true,
+            "examples": [],
+            "type": "object",
+            "properties": {
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "tagline": {
+                                    "type": "string"
+                                },
+                                "popularity_score": {
+                                    "type": "string"
+                                },
+                                "country_of_origin_code": {
+                                    "type": "string"
+                                },
+                                "identity_logo_url": {
+                                    "type": "string"
+                                },
+                                "parent_company_name": {
+                                    "type": "string"
+                                },
+                                "related_tags": {
+                                    "type": "string"
+                                },
+                                "industry_classification_id": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "country_of_origin_code",
+                                "identity_logo_url",
+                                "industry_classification_id",
+                                "name",
+                                "parent_company_name",
+                                "popularity_score",
+                                "related_tags",
+                                "tagline"
+                            ]
+                        },
+                        "query": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "response": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "default": "d2173e19-5ba6-4b1b-88d7-98e5255a51bd",
+                                    "enum": [
+                                        "",
+                                        "d2173e19-5ba6-4b1b-88d7-98e5255a51bd"
+                                    ]
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "default": "amazon_web",
+                                    "enum": [
+                                        "amazon_web"
+                                    ]
+                                },
+                                "tagline": {
+                                    "type": "string",
+                                    "default": "amazon_web",
+                                    "enum": [
+                                        "amazon_web"
+                                    ]
+                                },
+                                "popularity_score": {
+                                    "type": "integer",
+                                    "default": 8,
+                                    "enum": [
+                                        8
+                                    ]
+                                },
+                                "country_of_origin_code": {
+                                    "type": "string",
+                                    "default": "USA",
+                                    "enum": [
+                                        "USA"
+                                    ]
+                                },
+                                "identity_logo_url": {
+                                    "type": "string",
+                                    "default": "www.amazon_web.com",
+                                    "enum": [
+                                        "www.amazon_web.com"
+                                    ]
+                                },
+                                "parent_company_name": {
+                                    "type": "string",
+                                    "default": "amazon",
+                                    "enum": [
+                                        "amazon"
+                                    ]
+                                },
+                                "related_tags": {
+                                    "type": "string",
+                                    "default": "#amazonweb",
+                                    "enum": [
+                                        "#amazonweb"
+                                    ]
+                                },
+                                "industry_classification": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "default": 1,
+                                            "enum": [
+                                                1
+                                            ]
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "default": "industrial_classification_1",
+                                            "enum": [
+                                                "industrial_classification_1"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "id",
+                                        "name"
+                                    ]
+                                },
+                                "monthly_online_search_count": {
+                                    "type": "null",
+                                    "default": null
+                                }
+                            },
+                            "required": [
+                                "country_of_origin_code",
+                                "id",
+                                "identity_logo_url",
+                                "industry_classification",
+                                "monthly_online_search_count",
+                                "name",
+                                "parent_company_name",
+                                "popularity_score",
+                                "related_tags",
+                                "tagline"
+                            ]
+                        },
+                        "status": {
+                            "type": "integer",
+                            "enum": [
+                                200
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "DELETE",
+            "url": "https://dev-adsetup.mifadnetwork.com/v1/cms/brand/507a4aee-7170-4cb6-8c72-cd9bf484949b",
+            "scheme": "https",
+            "netloc": "dev-adsetup.mifadnetwork.com",
+            "path": "/v1/cms/brand/507a4aee-7170-4cb6-8c72-cd9bf484949b",
+            "query": {},
+            "body": null,
+            "data": null,
+            "auth": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.3.0"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2023-09-14T10:02:58.103636+00:00",
+                "local": "2023-09-14T15:32:58.103636+05:30"
+            }
+        },
+        "response": {
+            "seconds": 0.775511,
+            "status": 200,
+            "reason": "",
+            "body": {
+                "success": true
+            },
+            "headers": {
+                "Date": "Thu, 14 Sep 2023 10:02:57 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "0",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+                "X-Frame-Options": "DENY"
+            }
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "DELETE https://dev-adsetup.mifadnetwork.com/v1/cms/brand/507a4aee-7170-4cb6-8c72-cd9bf484949b",
+            "description": "MakeItFree Brand Automation Tests: Validate User Deletes the brand data by ID",
+            "default": true,
+            "examples": [],
+            "type": "object",
+            "properties": {
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "null"
+                        },
+                        "query": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "response": {
+                    "type": "object",
+                    "properties": {
+                        "body": {
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "default": true
+                                }
+                            },
+                            "required": [
+                                "success"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "spec": {}
+    }
+]

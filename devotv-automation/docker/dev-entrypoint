@@ -1,0 +1,27 @@
+#!/bin/sh --login
+
+echo "Updating PATH"
+#  Enable adding to PATH at runtime
+[[ -z $ADDITIONAL_PATH ]] || export PATH=$PATH:$ADDITIONAL_PATH
+[[ -z $DEBUG_MODE ]] || set -x
+
+setup_app() {
+    echo 'Setting up app - nothing to do because all lines are commented out.'
+    setup_ssh
+#    echo 'Installing requirements.txt'
+#    sudo pip install -r automation/requirements.txt
+}
+
+setup_ssh(){
+    echo 'SSH setup - no keys installed'
+    # Enable only if container really needs ssh keys
+    #cp -R /tmp/.ssh /root/.ssh
+    #chmod 700 ~/.ssh
+    #chmod 644 ~/.ssh/id_rsa.pub
+    #chmod 600 ~/.ssh/id_rsa
+}
+
+[[ "$1" = "--no-setup" ]] && shift || setup_app || exit 1
+echo "Validating Robot Version:" && robot --version
+echo "To shell into Docker container type [docker-compose exec automation sh] from a separate terminal without [ or ]"
+exec "$@"

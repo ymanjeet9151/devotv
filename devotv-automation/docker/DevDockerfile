@@ -1,0 +1,16 @@
+# This file creates the image for Robot to run. It is intentionally
+# lean - we are starting with a minimal image to see if
+# can get get base Robot working - hence using Alpine
+FROM python:3.7.11-alpine3.14
+
+LABEL name="Docker build for acceptance testing using the robot framework"
+
+ARG GEM_USER
+ARG GEM_PASSWORD
+
+RUN apk --no-cache --update add chromium chromium-chromedriver g++ \
+  && apk add --no-cache jpeg-dev zlib-dev \
+  && apk add --no-cache --virtual .build-deps build-base linux-headers \
+  && pip install Pillow
+  
+RUN pip install --no-cache --index-url ./package/automation.whl
