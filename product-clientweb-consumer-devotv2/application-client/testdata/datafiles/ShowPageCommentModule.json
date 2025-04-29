@@ -1,0 +1,426 @@
+{
+    "Id": "ShowPage-CommentModule-TEST",
+    "name": "DevoTV Automation Tests",
+    "type": "FUNCTIONAL",
+    "testList": [
+      {
+        "test_name": "Report a comment on Show Page through Home Page with refresh",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",false,false,"comment",false]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123",true,"comment","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Delete the Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Newest"]
+          }
+        ]
+      },
+      {
+        "test_name": "Report a comment on Show Page through Home Page without refresh",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",false,false,"comment",false]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123",false,"comment","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Delete the Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Newest"]
+          }
+        ]
+      },
+      {
+        "test_name": "Report a reply on comment on Show Page through Home Page without refresh",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",false,false,"comment",false]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Reply for a comment of the Show As User B",
+            "args": ["manjeet.yadav1@impressico.com","Impressico@123","Text is to Test Invisibility of comment if its reported",false,false,"reply",false,"Newest"]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123",false,"reply","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Delete the Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Newest"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate Invisibility of any comment if that is reported thrice on Show Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-tribe","page=ShowPage"]
+          },
+          {
+            "name": "User Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",
+            false,false,"comment",false]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-tribe","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123",true,"comment","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-tribe","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["manjeet.yadav1@impressico.com","Impressico@123",true,"comment","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-tribe","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["manjeet.yadav2@impressico.com","Impressico@123",true,"comment","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-tribe","page=ShowPage"]
+          },
+          {
+            "name": "User Verify Invisibility of comment/reply As user A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","comment","Newest"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate Invisibility of any reply on comment if that is reported thrice on Show Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Comment on a Show As User A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",
+            false,false,"comment",false]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Reply for a comment of the Show As User B",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text is to Test Invisibility of comment if its reported",false,false,"reply",false,"Newest"]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123",false,"reply","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["manjeet.yadav1@impressico.com","Impressico@123",false,"reply","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Reprots The Comment/The Reply On a Show As User C",
+            "args": ["manjeet.yadav2@impressico.com","Impressico@123",false,"reply","Newest"]
+          },
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-chasers","page=ShowPage"]
+          },
+          {
+            "name": "User Verify Invisibility of comment/reply As user A",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","reply","Newest"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Most Cheered SortBy on show page through home page with logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Login Under Comment Section",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123"]
+          },
+          {
+            "name": "User Fetch and compares the data for Most Cheered Sortby",
+            "args": ["Most Cheered","top","ghost-dimension-flying-solo","comment"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Newest SortBy on show page through home page with logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Login Under Comment Section",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123"]
+          },
+          {
+            "name": "User Fetch and compares the data for Newest Sortby",
+            "args": ["Newest","recent","ghost-dimension-flying-solo","comment"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Hot SortBy on show page through home page with logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/alien-autopsy","page=ShowPage"]
+          },
+          {
+            "name": "User Login Under Comment Section",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123"]
+          },
+          {
+            "name": "User Fetch and compares the data for Hot Sortby",
+            "args": ["Hot","hot","alien-autopsy","comment"]
+          }
+        ]
+      },
+      {
+        "test_name": "Upvote the comment on Show Page through Home Page with Logged In",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "User Clicks On Home Page Show And Validate Show Page",
+            "args": ["All","card"]
+          },
+          {
+            "name": "User Upvotes/Downvotes the comments on video",
+            "args": ["upvote","snehil.mishra+7@impressico.com","Noida@123","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Upvote the comment on Show Page through Landing page without Logged In",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=horror", "page=HorrorPage"]
+          },
+          {
+            "name": "Click any Video Card on horror page",
+            "args": []
+          },
+          {
+            "name": "User Performs Action On Vads Popup",
+            "args": ["SignIn","snehil.mishra+7@impressico.com","Noida@123","",""]
+          },
+          {
+            "name": "User Upvotes/Downvotes the comments on video",
+            "args": ["downvote","snehil.mishra+7@impressico.com","Noida@123","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Upvote the replies on comment of Show Page through Home Page with Logged In",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Login Under Comment Section",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123"]
+          },
+          {
+            "name": "User Upvotes/Downvotes the Replies of comment on video",
+            "args": ["upvote","snehil.mishra+7@impressico.com","Noida@123","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Upvote the replies on comment of Show Page through Landing Page with Logged In",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=horror", "page=HorrorPage"]
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Login Under Comment Section",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123"]
+          },
+          {
+            "name": "User Upvotes/Downvotes the Replies of comment on video",
+            "args": ["downvote","snehil.mishra+7@impressico.com","Noida@123","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate the Show More Comments Button on a comment of Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Verify Show More Comments Button for Comments",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123","top","the-conspiracy-show","comment"]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate the Show More Comments Button on replies of comment on Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/the-conspiracy-show","page=ShowPage"]
+          },
+          {
+            "name": "User Verify Show More Comments Button for Replies on Comment",
+            "args": ["snehil.mishra+7@impressico.com","Noida@123","recent","the-conspiracy-show","reply","Hot"]
+          }
+        ]
+      }
+    ]
+  }
+  

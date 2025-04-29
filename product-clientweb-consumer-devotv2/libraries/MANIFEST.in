@@ -1,0 +1,3 @@
+include datadrivenlibrary/*.csv
+include utils/*.robot
+recursive-exclude PageObjectLibrary *~ #*#

@@ -1,0 +1,16 @@
+Faker
+pep8
+pycodestyle
+pytest
+requests
+RESTinstance
+robotframework
+robotframework-faker
+robotframework-requests
+robotframework-seleniumlibrary
+selenium
+pyautogui
+xmltodict
+mysql-connector-python
+openapi-schema-validator
+

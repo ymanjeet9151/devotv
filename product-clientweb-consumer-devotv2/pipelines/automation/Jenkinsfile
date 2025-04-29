@@ -1,0 +1,114 @@
+@Library("devOps")_
+
+withFolderProperties {
+    environment = env.environment;
+    package_path = env.package_path;
+    execute_path = env.execute_path;
+    product = env.product;
+    project = env.project;
+    branch = env.branch;
+    pythonFile = env.pythonFile;
+    dirPath = env.dirPath;
+    files = env.files;
+    base = env.service;
+    service = env.service;
+    subject = env.subject;
+    slackChannel = env.slackChannel;
+    bucketName = env.bucketName;
+    accountID = env.accountID
+}
+
+Map input = new TreeMap<>()
+input.totalFailedCount = 0
+input.name = []
+input.dirPath = dirPath
+input.files = files
+input.environment = environment
+input.product = product
+input.project = project
+input.branch = branch
+input.base = service
+input.service = service
+
+Map slackInput = new TreeMap<>();
+slackInput.slackChannel = slackChannel;
+
+pipeline {
+    agent {
+        label 'master'
+    }
+
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '18'))
+        disableConcurrentBuilds()
+        timeout(time: 1, unit: 'HOURS')
+        skipDefaultCheckout(true)
+    }
+
+    stages {
+        stage('Run Stages') {
+            steps {
+                script {
+                    try {
+                        stage('Build Docker image') {
+                            dockerRun(input)
+                        }
+                        stage('Run Docker image and Copy Files') {
+                            sh """
+                                docker run --name docker_${service}_container docker_${service}
+                                docker cp docker_${service}_container:/app/application-client/output/generated/. ${WORKSPACE}/
+                                docker cp docker_${service}_container:/app/application-client/output/generated/. ${WORKSPACE}/output/
+                            """
+                        }
+                        stage('Upload Files to S3') {
+                            withAWS(role: "arn:aws:iam::${accountID}:role/shared-rivittv-jenkins-assumable-role") {
+                                sh """
+                                    aws s3 sync ${WORKSPACE}/output/ s3://${bucketName}/ --exclude "*" --include "*.html" --include "*.xml" --include "*.json" --include "*.html"
+                                """
+                            }
+                        }
+                        stage('Process Output Files') {
+                            processAutomationFiles(input, "processFiles")
+                        }
+                    } catch (Exception exception) {
+                        echo "Exception caught: ${exception.getMessage()}"
+                        currentBuild.result = 'FAILURE'
+                    }
+                    finally {
+                        stage('Clean Up') {
+                            images = ["docker_"+service+":latest"]
+                            cleanUpDockerImages(images);
+                            sh """ docker rm -f docker_${service}_container """
+                        }
+                    }
+                }
+            }
+        }
+    }
+    post {
+        success {  
+             echo " Job success !!!"  
+        }
+        failure {
+            echo " Job Failed !!!"
+            script {
+                slackInput.event = 'failure';
+                slackInput.message = 
+                """
+                Hi Team,
+                
+                Details of the test failure are as follows:
+                Environment : ${environment}
+                Test Execution ID: ${BUILD_NUMBER}
+                Test Start Date: ${BUILD_TIMESTAMP}
+                Failed Job: ${JOB_NAME}
+                Total Failed Test Count: ${input.totalFailedCount}
+                Failed Tests: ${input.name}
+                Failed URL: ${BUILD_URL}
+                
+                """;
+                slackNotifications(slackInput);
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+{
+  "Id": "ShowPage-TEST",
+  "name": "DevoTV Automation Tests",
+  "type": "FUNCTIONAL",
+  "testList": [
+    {
+      "test_name": "Validate the show page episode play with email signin",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Sign Out with Current User",
+          "args": []
+        },
+        {
+          "name": "User Clicks On Home Page Show And Validate Show Page",
+          "args": ["All","card"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "click and play video show",
+          "args": []
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Current Page Should Be ",
+          "args": ["VadsPage"]
+        },
+        {
+          "name": "User Performs Action On Vads Popup",
+          "args": ["SignIn","snehil.mishra+7@impressico.com","Noida@123","impressico","business"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Application should be on ShowPage",
+          "args": []
+        },
+        {
+          "name": "User Gets Video Playing Status",
+          "args": []
+        }
+      ]
+    },
+    {
+      "test_name": "Validate the show page episode play with Commercials",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Sign Out with Current User",
+          "args": []
+        },
+        {
+          "name": "User Clicks On Home Page Show And Validate Show Page",
+          "args": ["All","card"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "click and play video show",
+          "args": []
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Current Page Should Be ",
+          "args": ["VadsPage"]
+        },
+        {
+          "name": "User Performs Action On Vads Popup",
+          "args": ["Commercial","snehil.mishra+7@impressico.com","Noida@123","impressico","business"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Application should be on ShowPage",
+          "args": []
+        },
+        {
+          "name": "User Gets Video Playing Status",
+          "args": []
+        }
+      ]
+    },
+    {
+      "test_name": "Validate the show page episode play using URL",
+      "testRunEnabled": true,
+      "keywords":[
+        {
+          "name": "Sign Out with Current User",
+          "args": []
+        },
+        {
+          "name": "Launch an Application",
+          "args": ["endpoint=show/alien-autopsy","page=ShowPage"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "click and play video show",
+          "args": []
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Current Page Should Be ",
+          "args": ["VadsPage"]
+        },
+        {
+          "name": "User Performs Action On Vads Popup",
+          "args": ["SignIn","snehil.mishra+7@impressico.com","Noida@123","impressico","business"]
+        },
+        {
+          "name": "Sleep",
+          "args": ["10s"]
+        },
+        {
+          "name": "The Application should be on ShowPage",
+          "args": []
+        },
+        {
+          "name": "User Gets Video Playing Status",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

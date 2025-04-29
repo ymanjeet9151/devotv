@@ -1,0 +1,214 @@
+{
+    "Id": "ShowPage-Features-TEST",
+    "name": "DevoTV Automation Tests",
+    "type": "FUNCTIONAL",
+    "testList": [
+      {
+        "test_name": "Validate User like his/her show without logged in(homepage)",
+        "testRunEnabled": false,
+        "keywords":[
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "Click any Video Card on Home Page",
+            "args": []
+          },
+          {
+            "name": "Validate user favour the video",
+            "args": ["like","default","rajala.srinivas23392@gmail.com","India@123","should_pass","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate User like his/her show without logged in",
+        "testRunEnabled": false,
+        "keywords":[
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=horror","page=HorrorPage"]
+          },
+          {
+            "name": "Click any Video Card on horror page",
+            "args": []
+          },
+          {
+            "name":"Validate user favour the video",
+            "args":["like","default","rajala.srinivas23392@gmail.com","India@123","should_pass","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validate User like his/her show with logged in(homepage)",
+        "testRunEnabled": false,
+        "keywords":[
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "click any video card on Home Page",
+            "args": []
+          },
+          {
+            "name":"Validate user favour the video",
+            "args":["like","default","rajala.srinivas23392@gmail.com","India@123","should_pass","SignIn","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Watchlist on show page through home page without logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "HomePage.Click any Video Card on Home Page",
+            "args": []
+          },
+          {
+            "name": "Perform Action on Watchlist",
+            "args": ["SignIn","snehil.mishra+7@impressico.com","Noida@123","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Watchlist on show page through Landing page without logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sign Out with Current User",
+            "args": []
+          },
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=horror","page=HorrorPage"]
+          },
+          {
+            "name": "Click any Video Card on Horror Page",
+            "args": []
+          },
+          {
+            "name": "Perform Action on Watchlist",
+            "args": ["SignIn","snehil.mishra+7@impressico.com","Noida@123","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Validating functionality of Watchlist on show page through home page with logged in",
+        "testRunEnabled": true,
+        "keywords": [
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "User Clicks On Home Page Show And Validate Show Page",
+            "args": ["All","card"]
+          },
+          {
+            "name": "Perform Action on Watchlist",
+            "args": ["","","","",""]
+          }
+        ]
+      },
+      {
+        "test_name": "Comment a plain text on Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Comment/Reply on Main Video",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","testing with text", false, false,"comment",true]
+          }
+        ]
+      },
+      {
+        "test_name": "Comment a plain text with Emoji on Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Launch an Application",
+            "args": ["endpoint=show/ghost-dimension-flying-solo","page=ShowPage"]
+          },
+          {
+            "name": "User Comment/Reply on Main Video",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Plain Text", true, false,"comment",true]
+          }
+        ]
+      },
+      {
+        "test_name": "posting a comment (Plain text+GIF) on Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "HomePage.Click any Video Card on Home Page",
+            "args": []
+          },
+          {
+            "name": "User Comment/Reply on Main Video",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text with GIF", false, true,"comment",true]
+          }
+        ]
+      },
+      {
+        "test_name": "Posting a comment (text+emoji+gif) on Show Page through Home Page",
+        "testRunEnabled": true,
+        "keywords":[
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "HomePage.Click any Video Card on Home Page",
+            "args": []
+          },
+          {
+            "name": "User Comment/Reply on Main Video",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Text with Emoji and GIF", true, true,"comment",true]
+          }
+        ]
+      },
+      {
+        "test_name": "Replying a comment (text+emoji+gif) on Show Page through Home Page",
+        "testRunEnabled": false,
+        "keywords":[
+          {
+            "name": "Sleep",
+            "args": ["5"]
+          },
+          {
+            "name": "HomePage.Click any Video Card on Home Page",
+            "args": []
+          },
+          {
+            "name": "User Comment/Reply on Main Video",
+            "args": ["rajala.srinivas23392@gmail.com","India@123","Reply with Emoji and GIF", false, false,"reply",true]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  webv2:
+    build:
+      context: ../
+      dockerfile: ./docker/webv2/Dockerfile
+      args:
+        environment: ${environment}
+        bucketName: ${bucketName}
+        AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+        AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+        AWS_SESSION_TOKEN: ${AWS_SESSION_TOKEN}
+  pagehealth:
+    build:
+      context: ../
+      dockerfile: ./docker/automation/Dockerfile
+      args:
+        environment: ${environment}
+        package_path: ${package_path}
+        execute_path: ${execute_path}
+        AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+        AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+        AWS_SESSION_TOKEN: ${AWS_SESSION_TOKEN}
